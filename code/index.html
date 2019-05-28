@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/master.css">
+  <title>Validation Test</title>
+</head>
+<script>
+  function reportErr(obj){
+
+  }
+
+  function validateForm(event) {
+    var inputs = ourForm.getElementsByTagName("input").filter(input => input.type == 'text')
+    
+  }
+
+  function init() {
+    console.log("started init")
+    myform = document.getElementById("ourForm")
+    myform.addEventListener("submit", validateForm)
+    console.log(myform)
+  }
+</script>
+<body onload="init()">
+  <p id="error"></p>
+  <form id="ourForm" action="#" method="post">
+    <input class="text" type="text" placeholder="name" name="name">
+    <input class="text" type="text" placeholder="email" name="email">
+    <input type="submit" name="submit" placeholder="submit">
+  </form>
+</body>
+</html>
